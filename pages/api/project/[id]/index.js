@@ -1,6 +1,5 @@
 import nc from "next-connect";
 import Project from "../../../../models/Project";
-import clientPromise from "../../../../lib/mongodbPromise.ts";
 import {connectToDatabase} from '../../../../lib/mongodb'
 import { ObjectId } from "mongodb";
 const handler = nc();
