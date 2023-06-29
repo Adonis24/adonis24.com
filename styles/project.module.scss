@@ -1,0 +1,46 @@
+.project {
+    min-height: 100vh;
+    &__container {
+      max-width: 2600px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .path {
+      font-size: 14px;
+      color: #666;
+    }
+    &__main {
+      position: relative;
+      display: grid;
+      margin-top: 1rem;
+      gap: 1rem;
+      @media (min-width: 800px) {
+        grid-template-columns: none;
+        // grid-template-columns: 1fr 350px;
+        gap: 2rem;
+      }
+      @media (min-width: 1160px) {
+        grid-template-columns: none;
+        // grid-template-columns: 1fr 1fr ;
+        gap: 2rem;
+      }
+    }
+  }
+  .project-back{
+    
+  }
+  .btn {
+    width: 200px;
+    height: 60px;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    &:hover {
+      width: 250px;
+      height: 80px;
+    }
+  }
